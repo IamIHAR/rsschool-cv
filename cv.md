@@ -1,4 +1,4 @@
-# My name is Igor Medvedev
+# Igor Medvedev
 
 
 ## Contacts:
