@@ -8,6 +8,10 @@
 * __GitHub__ : [IamIHAR](https://github.com/IamIHAR)
 
 
+## About myself
+I work as a security system engineer and I'd like to try my hand in Front-end development.
+
+
 ## Skills:
 * HTML
 * CSS
@@ -29,7 +33,7 @@
 * Books about javascript (in progress)
 
 
-## Code example:
+## Code example
 __Split Strings__ KATA from CODEWARS:
 Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
 ```javascript
