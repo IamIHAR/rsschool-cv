@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Igor Medvedev</title>
 </head>
 <body>
     <header>
@@ -17,5 +17,74 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="profile">
+            <div class="profile_ava">
+                <img src="./images/avatar.jpg" alt="my photo" width="380" height="570">
+            </div>
+            <div class="profile__description">
+                <h1 class="profile__name">Igor Medvedev</h1>
+                <h2 class="profile__speciality">Beginner Front-End developer</h2>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2>Summary</h2>
+            <div class="summary">
+                Hello. My name is Igor. I am 30 years old. I work as a security system engineer. 
+            </div>
+        </div>
+        <div class="contacts">
+            <h2>Contacts</h2>
+            <ul class="contacts-list">
+                <li class="contacts-list__items">Phone</li>
+                <li class="contacts-list__items">Mail</li>
+                <li class="contacts-list__items">Telegram</li>
+                <li class="contacts-list__items">Adress</li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education__description">
+                <div class="education__description_name">
+                    BSUIR
+                </div> 
+                <div class="education__description_speciality">Electronical security systems</div>
+            </div>
+            <div class="education__description">
+                <div class="education__description_name">Mela Rossa</div> 
+                <div class="education__description_speciality">Front-End development</div>
+            </div>
+            <div class="education__description">
+                <div class="education__description_name">The Rolling Scopes school</div> 
+                <div class="education__description_speciality">JavaScript/Front-end (in progress)</div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class="code">
+            <h2>Code example</h2>
+            <div class="code-description">
+                My code example is <a href="https://www.codewars.com/kata/515de9ae9dcfc28eb6000001">Kata</a> from <a href="https://www.codewars.com/dashboard">codewars</a>
+                <code>
+                    function solution(str){
+                        if(str === '') return []
+                        let arr = str.split('')
+                        let arr2 = []
+                        arr.length % 2 !== 0? arr.push('_'): arr;
+                        arr.map((e,i) => i % 2 !== 0? arr2.push(e + ' '): arr2.push(e))
+                      return arr2.join('').trim().split(' ')
+                      }
+                </code>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
