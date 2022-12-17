@@ -4,45 +4,69 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Igor Medvedev</title>
 </head>
 <body>
-    <header>
-        <nav class="header-links">
-            <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Education</li>
-                <li>Code</li>
+    <div class="wrapper-container">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav_list">
+                <li>
+                    <a href="#about" class="header-link">About me</a>
+                </li>
+                <li>
+                    <a href="#my-education" class="header-link">Education</a>
+                </li>
+                <li>
+                    <a href="#my-skills" class="header-link">Skills</a>
+                </li>
+                <li>
+                    <a href="#my-code" class="header-link">Code</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="profile">
             <div class="profile_ava">
-                <img src="./images/avatar.jpg" alt="my photo" width="380" height="570">
+                <img src="./images/avatar.jpg" alt="my photo">
             </div>
             <div class="profile__description">
                 <h1 class="profile__name">Igor Medvedev</h1>
                 <h2 class="profile__speciality">Beginner Front-End developer</h2>
             </div>
         </div>
-        <div class="about-me">
+        <div class="about-me" id="about">
             <h2>Summary</h2>
             <div class="summary">
-                Hello. My name is Igor. I am 30 years old. I work as a security system engineer. 
+                <div class="summary__about-me">
+                    Hello. My name is Igor. I am 30 years old. I graduated from Belarusian State University of Informatics and Radioelectronics. I work as a security system engineer. 
+                </div>
+                <div class="summary__learning">
+                    I started my journey in studying development on my own. Later I completed the courses at 'Mela Rossa'  IT school. I am currently taking The Rolling Scopes School courses.
+                </div>
             </div>
         </div>
         <div class="contacts">
             <h2>Contacts</h2>
             <ul class="contacts-list">
-                <li class="contacts-list__items">Phone</li>
-                <li class="contacts-list__items">Mail</li>
-                <li class="contacts-list__items">Telegram</li>
-                <li class="contacts-list__items">Adress</li>
+                <li class="contacts-list__items">
+                    <a href="tel:+375295754442">Phone: +375295754442</a>
+                </li>
+                <li class="contacts-list__items">
+                    <a href="mailto:yoyoyo951@gmail.com">Mail: yoyoyo951@gmail.com</a>
+                </li>
+                <li class="contacts-list__items">
+                    <a href="https://t.me/igormdvd">Telegram: igormdvd</a>
+                </li>
+                <li class="contacts-list__items">
+                    Adress: Mogilev, Belarus
+                </li>
             </ul>
         </div>
-        <div class="education">
+        <div class="education" id="my-education">
             <h2>Education</h2>
             <div class="education__description">
                 <div class="education__description_name">
@@ -51,54 +75,64 @@
                 <div class="education__description_speciality">Electronical security systems</div>
             </div>
             <div class="education__description">
-                <div class="education__description_name">Mela Rossa</div> 
+                <div class="education__description_name">Mela Rossa (courses)</div> 
                 <div class="education__description_speciality">Front-End development</div>
             </div>
             <div class="education__description">
-                <div class="education__description_name">The Rolling Scopes school</div> 
+                <div class="education__description_name">The Rolling Scopes School (courses)</div> 
                 <div class="education__description_speciality">JavaScript/Front-end (in progress)</div>
             </div>
         </div>
-        <div class="skills">
-            <h2>Skills</h2>
+        <div class="skills" id="my-skills">
+            <h2>Skills <span class="skills-header">(basic knowledge)</span></h2>
             <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
-                <li>React</li>
+                <li>React JS</li>
                 <li>Git</li>
+                <li>Photoshop</li>
             </ul>
         </div>
-        <div class="code">
+        <div class="code" id="my-code">
             <h2>Code example</h2>
-            <div class="code-description">
-                My code example is <a href="https://www.codewars.com/kata/515de9ae9dcfc28eb6000001">Kata</a> from <a href="https://www.codewars.com/dashboard">codewars</a>
-                <code>
-                    function solution(str){
-                        if(str === '') return []
-                        let arr = str.split('')
-                        let arr2 = []
-                        arr.length % 2 !== 0? arr.push('_'): arr;
-                        arr.map((e,i) => i % 2 !== 0? arr2.push(e + ' '): arr2.push(e))
-                      return arr2.join('').trim().split(' ')
+            <div class="code-example">
+                <div class="code-example__description">
+                    My code example is <a href="https://www.codewars.com/kata/515de9ae9dcfc28eb6000001">Kata</a> from <a href="https://www.codewars.com/dashboard">codewars</a>:
+                </div>
+                <code class="my-code">
+                        function solution(str){ <br>
+                        if(str === '') return [] <br>
+                        let arr = str.split('') <br>
+                        let arr2 = [] <br>
+                        arr.length % 2 !== 0? arr.push('_'): arr; <br>
+                        arr.map((e,i) => i % 2 !== 0? arr2.push(e + ' '): arr2.push(e)) <br>
+                        return arr2.join('').trim().split(' ') <br>
                       }
                 </code>
             </div>
         </div>
+        <div class="languages">
+            <h2>Languages</h2>
+            <div class="languages__description">
+                <div>Russian: Native</div>
+                <div>English: A2</div>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer class="footer-container">
         <div class="footer-links">
             <a href="https://rs.school/js/">
-                <img src="./images/rs_school_js.svg" alt="logo RSS">
+                <img src="./images/rs_school_js.svg" alt="logo RSS" width="100" height="100">
             </a>
             <a href="https://github.com/IamIHAR">
-                <img src="./images/github.svg" alt="logo Github">
+                <img src="./images/github.svg" alt="logo Github" width="50" height="50">
             </a>
         </div>
         <div class="footer-description">
             Igor Medvedev, 2022
         </div>
-
     </footer>
+</div>
 </body>
 </html>
